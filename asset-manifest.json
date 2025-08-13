@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/qiqi/static/css/main.7bf437b0.css",
+    "main.js": "/qiqi/static/js/main.deb8b0c9.js",
+    "static/js/453.23ccb252.chunk.js": "/qiqi/static/js/453.23ccb252.chunk.js",
+    "static/media/QIQI.jpg": "/qiqi/static/media/QIQI.3698d13b19b1d721da9f.jpg",
+    "index.html": "/qiqi/index.html",
+    "main.7bf437b0.css.map": "/qiqi/static/css/main.7bf437b0.css.map",
+    "main.deb8b0c9.js.map": "/qiqi/static/js/main.deb8b0c9.js.map",
+    "453.23ccb252.chunk.js.map": "/qiqi/static/js/453.23ccb252.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7bf437b0.css",
+    "static/js/main.deb8b0c9.js"
+  ]
+}
