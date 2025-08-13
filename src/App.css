@@ -1,0 +1,164 @@
+/* Bagian utama tetap seperti sebelumnya… */
+
+@import url("https://fonts.googleapis.com/css2?family=Libertinus+Math&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Libertinus Math", system-ui;
+  background-color: #000;
+  color: white;
+}
+
+/* HEADER NAVIGATION */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-sizing: border-box;
+  backdrop-filter: blur(10px);
+  flex-wrap: wrap;
+}
+
+.header .brand {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* NAVIGATION LINK */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 10;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 8px 16px;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.nav-links a:focus,
+.nav-links a:active,
+.nav-links .active a {
+  color: black;
+  background-color: white;
+}
+
+/* RESPONSIVE CONTAINER */
+.container {
+  padding-top: 100px;
+  max-width: 900px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 60px 20px;
+  scroll-margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* PARTICLE BACKGROUND */
+#tsparticles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* THEME MODE SUPPORT */
+:root {
+  --background: #000;
+  --text: #fff;
+  --link-hover: rgba(255, 255, 255, 0.1);
+  --link-active-bg: white;
+  --link-active-text: black;
+}
+
+[data-theme="light"] {
+  --background: #fff;
+  --text: #000;
+  --link-hover: rgba(0, 0, 0, 0.05);
+  --link-active-bg: black;
+  --link-active-text: white;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.nav-links a {
+  background-color: var(--link-hover);
+  color: var(--text);
+}
+
+.nav-links a:focus,
+.nav-links a:active,
+.nav-links .active a {
+  background-color: var(--link-active-bg);
+  color: var(--link-active-text);
+}
+
+/* ======================
+   ✅ MEDIA QUERY MOBILE
+======================== */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+  }
+
+  .brand {
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    padding: 6px 14px;
+    font-size: 0.85rem;
+  }
+
+  .container {
+    padding-top: 120px;
+  }
+
+  .page {
+    padding: 40px 16px;
+  }
+}

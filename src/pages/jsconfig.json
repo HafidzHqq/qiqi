@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "Components/*": ["components/*"]
+    }
+  },
+  "exclude": [
+    "node_modules", // Ini akan mengabaikan semua file di node_modules
+    "dist",
+    "build"
+  ]
+}
