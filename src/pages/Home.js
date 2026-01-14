@@ -1,3 +1,4 @@
+import React from "react";
 import ProfileCard from "../components/ProfileCard/ProfileCard"; 
 import QIQIImage from "../components/ProfileCard/QIQI.jpg";
 import ParticlesBackground from "../components/ParticlesBackground"; 

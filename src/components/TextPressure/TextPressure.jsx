@@ -162,7 +162,7 @@ const TextPressure = ({
         background: "transparent",
       }}
     >
-      <style>{`
+      <style> {`
         @font-face {
           font-family: '${fontFamily}';
           src: url('${fontUrl}');
@@ -192,7 +192,8 @@ const TextPressure = ({
         .text-pressure-title {
           color: ${textColor};
         }
-      `}</style>
+      `}
+          </style>
 
       <h1
         ref={titleRef}

@@ -3,6 +3,7 @@
 import React from "react";
 import ScrollFloat from "../components/ScrollFloat/ScrollFloat";
 
+
 function Skill() {
   return (
     <div className="page" id="skill">
@@ -12,11 +13,13 @@ function Skill() {
           ⚙️ Skill
         </ScrollFloat>
         <ul>
-          <li>✅ HTML, CSS, JavaScript</li>
-          <li>✅ React.js & Node.js</li>
-          <li>✅ C++ & Python</li>
-          <li>✅ Arduino & IoT Prototyping</li>
+          <li> HTML, CSS, JavaScript</li>
+          <li> React.js </li>
+          <li> C++ </li>
+          <li> Arduino & IoT Prototyping</li>
+          <li> Laravel</li>
         </ul>
+
       </div>
     </div>
   );
